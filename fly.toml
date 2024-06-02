@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for sendanote on 2024-06-02T08:49:19-04:00
+# fly.toml app configuration file generated for sendanotes on 2024-06-02T17:49:02-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'sendanote'
+app = 'sendanotes'
 primary_region = 'yyz'
 console_command = 'php /var/www/html/artisan tinker'
 
@@ -14,8 +14,7 @@ console_command = 'php /var/www/html/artisan tinker'
 
 [env]
   APP_ENV = 'production'
-  DB_CONNECTION = 'pgsql'
-  APP_URL = 'https://sendanote.fly.dev'
+  DB_CONNECTION = "pgsql"
   LOG_CHANNEL = 'stderr'
   LOG_LEVEL = 'info'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
